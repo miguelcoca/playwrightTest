@@ -1,4 +1,4 @@
-import { PageManager } from '../pages/page-manager';
+import { PageManager } from '../pages/pageManager';
 import { setWorldConstructor, World, IWorldOptions } from '@cucumber/cucumber';
 import * as messages from '@cucumber/messages';
 import { BrowserContext, Page, APIRequestContext } from 'playwright';
