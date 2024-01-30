@@ -2,7 +2,9 @@ const common = `
   --require-module ts-node/register
   --require features/**/*.ts
   --format json:reports/report.json 
+  --format json:reports/cucumber-html-reporter.ndjson
   --format message:reports/report.ndjson
+  --format theme: 'bootstrap',
   --format html:reports/report.html
   --format summary 
   --format progress-bar 

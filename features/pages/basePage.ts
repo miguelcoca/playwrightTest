@@ -1,6 +1,7 @@
 import config from '../../config';
 import { Page, BrowserContext } from 'playwright';
 import expect from 'expect';
+import { Expect } from 'expect/build/types';
 import { join } from 'path';
 
 export class BasePage {
@@ -12,8 +13,7 @@ export class BasePage {
     this.context = context;
   }
 
-  // eslint-disable-next-line @typescript-eslint/explicit-module-boundary-types
-  public get expect() {
+  public get expect(): Expect {
     return expect;
   }
 
